@@ -32,7 +32,7 @@ def main():
         tokenizer.load(tokenizer_file)
     else:
         print("Training new model...")
-        model, tokenizer = train_model('data/corpus.txt', epochs=15, learning_rate=0.01)
+        model, tokenizer = train_model('CATF\data\corpus.txt', epochs=15, learning_rate=0.01)
         model.save(model_file)
         tokenizer.save(tokenizer_file)
 

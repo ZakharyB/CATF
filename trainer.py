@@ -171,7 +171,7 @@ def generate_sample(model, tokenizer, seed_text, length=20):
 
 if __name__ == "__main__":
     try:
-        model, tokenizer = asyncio.run(train_model('data/corpus.txt', epochs=5, learning_rate=0.001, patience=5))
+        model, tokenizer = asyncio.run(train_model('CATF\data\corpus.txt', epochs=5, learning_rate=0.001, patience=5))
         model.save('trained_model.json')
         tokenizer.save('trained_tokenizer.json')
         logging.info("Training completed. Model and tokenizer saved.")

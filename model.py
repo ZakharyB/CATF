@@ -25,6 +25,18 @@ class UniqueNeuralNetwork:
         
         self.memory = [0] * hidden_size
 
+
+    def to_dict(self):
+        return {
+            'input_size': self.input_size,
+            'hidden_size': self.hidden_size,
+            'output_size': self.output_size,
+            'num_layers': self.num_layers,
+            'layers': self.layers,
+            'memory': self.memory,
+            'settings': self.settings
+        }
+    
     def initialize_layer(self, input_size: int, output_size: int) -> dict:
         return {
             'weights': [[random.uniform(-0.1, 0.1) for _ in range(input_size)] for _ in range(output_size)],
