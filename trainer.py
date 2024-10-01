@@ -5,7 +5,6 @@ import math
 import json
 import asyncio
 
-# Assuming UniqueNeuralNetwork and Tokenizer are defined elsewhere
 from model import UniqueNeuralNetwork
 from tokenizer import Tokenizer
 
